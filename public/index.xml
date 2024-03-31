@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Mar 2024 13:51:28 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Commit</title>
+      <link>http://localhost:1313/posts/git-commit/</link>
+      <pubDate>Sun, 31 Mar 2024 13:51:28 -0700</pubDate>
+      <guid>http://localhost:1313/posts/git-commit/</guid>
+      <description>I come from experience where the work we did was documented on Jira. The task description, requirements, and QA procedure were all recorded there. This is useful as non developer stakeholders usually do not have access to a project&amp;rsquo;s git commit history. Besides, who wants to navigate through git just to see what work is being done?&#xA;I like to think that commit messages should be as succinct as possible. It should only describe the content of the work.</description>
+    </item>
+  </channel>
+</rss>

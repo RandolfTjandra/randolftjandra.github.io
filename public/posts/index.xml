@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Mar 2024 13:51:28 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Commit</title>
+      <link>http://localhost:1313/posts/git-commit/</link>
+      <pubDate>Sun, 31 Mar 2024 13:51:28 -0700</pubDate>
+      <guid>http://localhost:1313/posts/git-commit/</guid>
+      <description>I come from experience of&#xA;I like to standardize my git commit messages; below is my .gitmessage. The first line is reserved for a single sentence describing what the contents of the commit. Issue refers to the project issue that the commit is addressing. Reviewer is a list of names of people who reviewed the code. If there is any additional context that is absolutely necessary for the commit, then it should go under the reviewer line.</description>
+    </item>
+  </channel>
+</rss>
