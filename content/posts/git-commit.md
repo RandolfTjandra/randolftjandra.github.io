@@ -1,7 +1,7 @@
 ---
 title: "Git Commit"
 date: 2024-03-31T13:51:28-07:00
-draft: true
+draft: false
 ---
 
 I come from experience where the work we did was documented on Jira. The task description, requirements, and QA procedure were all recorded there. This is useful as non developer stakeholders usually do not have access to a project's git commit history. Besides, who wants to navigate through git just to see what work is being done?
@@ -55,7 +55,7 @@ Issue: WORK-435
 Reviewer: none
 ```
 
-### Git hooks
+## Git hooks
 
 An additional thing I have set up are the follow lines in my .gitconfig.
 
