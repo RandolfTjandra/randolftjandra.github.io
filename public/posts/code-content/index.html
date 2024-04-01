@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Git Commit | Randolf Tjandra</title>
+    <title>Code Content | Randolf Tjandra</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="Implement this and that, and this and that, and this and that, and this and that&hellip;">
+<meta name="description" content="A brief description of Hugo Shortcodes">
 <meta name="generator" content="Hugo 0.124.1">
 
 
@@ -62,21 +62,21 @@ if (!doNotTrack) {
       
 
 <section id="single">
-    <h1 class="title">Git Commit</h1>
+    <h1 class="title">Code Content</h1>
 
     <div class="tip">
-        <time datetime="2024-03-31 13:51:28 -0700 PDT">Mar 31, 2024</time>
+        <time datetime="2021-03-10 00:00:00 &#43;0000 UTC">Mar 10, 2021</time>
         <span class="split">
           ·
         </span>
         <span>
-          608 words
+          459 words
         </span>
         <span class="split">
           ·
         </span>
         <span>
-          3 minute read
+          1 minute read
         </span>
     </div>
 
@@ -91,7 +91,14 @@ if (!doNotTrack) {
           <div>
               <nav id="TableOfContents">
   <ul>
-    <li><a href="#commit-message">Commit Message</a></li>
+    <li><a href="#t1">t1</a>
+      <ul>
+        <li><a href="#t11">t1.1</a></li>
+        <li><a href="#t12">t1.2</a></li>
+      </ul>
+    </li>
+    <li><a href="#t2">t2</a></li>
+    <li><a href="#t3">t3</a></li>
   </ul>
 </nav>
           </div>
@@ -104,49 +111,51 @@ if (!doNotTrack) {
 
 
     <div class="content">
-      <p>I come from experience where the work we did was documented on Jira. The task description, requirements, and QA procedure were all recorded there. This is useful as non developer stakeholders usually do not have access to a project&rsquo;s git commit history. Besides, who wants to navigate through git just to see what work is being done?</p>
-<p>I like to think that commit messages should be as succinct as possible. It should only describe the content of the work. Additional information such as how to test this work, detailed changes, should all go into your project management software issues or other documentation. When a commit message has to spend multiple sentences describing its content, that says a lot about your team&rsquo;s approach to planning work. Your commit probably would benefit from being split up.</p>
-<p>With smaller commits, pull requests will be quicker because they&rsquo;re focused on a singular task. QA becomes more straightforward because you&rsquo;re narrowing down the area of concern. You simplify the hypothetical process of reverting your changes in the rare case something goes awry. Overall you improve the health of your project&rsquo;s commit history as it becomes more iterative and readable, and you reduce the time it takes for your work to reach production because there are fewer barriers to get through.</p>
-<p>Imagine the opposite scenario where you and your team plan out an entire project into a single commit, waterfall style. As you develop the project you also spot areas where code can be improved so you start doing refactors as well. Over time your project branch drifts against main, which will potentially make it difficult to merge your work later.</p>
-<p>The refactors could have happened separately and merged sooner. That&rsquo;s something all contributors would benefit from. The fact that these irrelevant changes came up during your work could be indication that you&rsquo;ve been on this branch for too long, going back to what I said about being able to succinctly describe your work in your commit message.</p>
-<p>I&rsquo;ll talk about how I think tasks should be designed in another post.</p>
-<h2 id="commit-message">Commit Message <a href="#commit-message" class="anchor">🔗</a></h2><p>Below is my .gitmessage file. The first line is reserved for a single sentence describing what the contents of the commit. Issue refers to the project issue that the commit is addressing. Reviewer is a list of names of people who reviewed the code. Any additional context that&rsquo;s necessary should come after.</p>
-<p>I don&rsquo;t think the reviewer line is totally necessary if you&rsquo;d prefer to just refer to the pull request for this information.</p>
-<p>My preference is for commit messages to be in imperative verb form.</p>
-<blockquote>
-<p>Eg. Fix issue where transactions are attributed to the wrong user</p>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Issue: none
-</span></span><span style="display:flex;"><span>Reviewer: pending
-</span></span></code></pre></div><p>This is my prepare-commit-msg file (chmod +x this file).</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#080">#!/bin/sh
-</span></span></span><span style="display:flex;"><span><span style="color:#080"></span><span style="color:#080;font-style:italic">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Assumes branches follow the format `draft-[project]-[ticket_number]`</span>
-</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Also assumes you&#39;re using the standard gitmessage</span>
-</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Converts branch name into Issue ticket</span>
-</span></span><span style="display:flex;"><span>sed -i.bak <span style="color:#b44">&#34;s/Issue: none/Issue: </span><span style="color:#a2f;font-weight:bold">$(</span>git branch | grep <span style="color:#b44">&#39;*&#39;</span> | sed -E <span style="color:#b44">&#39;s/\* //;s/([a-zA-Z]+-[0-9]+).*/\1/&#39;</span> | tr <span style="color:#b44">&#39;[:lower:]&#39;</span> <span style="color:#b44">&#39;[:upper:]&#39;</span><span style="color:#a2f;font-weight:bold">)</span><span style="color:#b44">/&#34;</span> <span style="color:#b44">&#34;</span><span style="color:#b8860b">$1</span><span style="color:#b44">&#34;</span>
-</span></span></code></pre></div><p>My workflow is: I go to my project management software, get my current task identifier (which follows the format eg. project-123), create a new branch with that as its name, then have my commits automatically tag the commit message with that issue identifier.</p>
-<p>eg.
-When my branch name is work-435, prepare-commit-msg formats my commit message to:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Issue: WORK-435
-</span></span><span style="display:flex;"><span>Reviewer: none
-</span></span></code></pre></div><p>An additional thing I have set up are the follow lines in my .gitconfig.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[core]
-</span></span><span style="display:flex;"><span>  hooksPath = ~/.git-hooks
-</span></span></code></pre></div><p>.git-hooks/ contains my prepare-commit-msg file.
-When I run git init in any of my git repos, it&rsquo;ll run my hooks if present before it looks for a local copy.</p>
-
+      <h2 id="t1">t1 <a href="#t1" class="anchor">🔗</a></h2><p>aaaa</p>
+<p>Test <a href="http://example.com" target="_blank" rel="noopener">aaa</a> text.</p>
+<h3 id="t11">t1.1 <a href="#t11" class="anchor">🔗</a></h3><p>aaaa</p>
+<h3 id="t12">t1.2 <a href="#t12" class="anchor">🔗</a></h3><p>aaaa</p>
+<h4 id="t121">t1.2.1 <a href="#t121" class="anchor">🔗</a></h4><p>aaaa</p>
+<h4 id="t122">t1.2.2 <a href="#t122" class="anchor">🔗</a></h4><p>aaaa</p>
+<h2 id="t2">t2 <a href="#t2" class="anchor">🔗</a></h2><p>aaaa</p>
+<h2 id="t3">t3 <a href="#t3" class="anchor">🔗</a></h2><ol>
+<li>One<br><br></li>
+</ol>
+<p>/<code> testing some code /</code></p>
+<ol start="2">
+<li>Two<br><br></li>
+<li>Three<br><br></li>
+</ol>
+<p>超宽显示 <code>var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;var a = &quot;text&quot;;</code>  超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示超宽显示 <code>var a = &quot;text&quot;;</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>2021-08-02 17:51:23.718 ERROR org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Fatal error occurred in the cluster entrypoint.
+</span></span><span style="display:flex;"><span>org.apache.flink.util.FlinkException: Application failed unexpectedly.
+</span></span><span style="display:flex;"><span>	at org.apache.flink.client.deployment.application.ApplicationDispatcherBootstrap.lambda$runApplicationAndShutdownClusterAsync$0(ApplicationDispatcherBootstrap.java:170) ~[flink-dist_2.12-1.13.1.jar:1.13.1]
+</span></span><span style="display:flex;"><span>	at java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:836) ~[?:1.8.0_292]
+</span></span><span style="display:flex;"><span>	at java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:811) ~[?:1.8.0_292]
+</span></span><span style="display:flex;"><span>	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_292]
+</span></span><span style="display:flex;"><span>	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990) ~[?:1.8.0_292]
+</span></span><span style="display:flex;"><span>	at org.apache.flink.client.deployment.application.ApplicationDispatcherBootstrap.runApplicationEntryPoint(ApplicationDispatcherBootstrap.java:257) ~[flink-dist_2.12-1.13.1.jar:1.13.1]
+</span></span><span style="display:flex;"><span>	at org.apache.flink.client.deployment.application.ApplicationDispatcherBootstrap.lambda$runApplicationAsync$1(ApplicationDispatcherBootstrap.java:212) ~[flink-dist_2.12-1.13.1.jar:1.13.1]
+</span></span><span style="display:flex;"><span>	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_292]
+</span></span><span style="display:flex;"><span>	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_292]
+</span></span><span style="display:flex;"><span>	at org.apache.flink.runtime.concurrent.akka.ActorSystemScheduledExecutorAdapter$ScheduledFutureTask.run(ActorSystemScheduledExecutorAdapter.java:159) [flink-dist_2.12-1.13.1.jar:1.13.1]
+</span></span><span style="display:flex;"><span>	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [flink-dist_2.12-1.13.1.jar:1.13.1]
+</span></span><span style="display:flex;"><span>	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44) [flink-dist_2.12-1.13.1.jar:1.13.1]
+</span></span><span style="display:flex;"><span>	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [flink-dist_2.12-1.13.1.jar:1.13.1]
+</span></span><span style="display:flex;"><span>	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [flink-dist_2.12-1.13.1.jar:1.13.1]
+</span></span><span style="display:flex;"><span>	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [flink-dist_2.12-1.13.1.jar:1.13.1]
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>test
+</span></span><span style="display:flex;"><span>test
+</span></span><span style="display:flex;"><span>test
+</span></span></code></pre></div>
     </div>
 
     
         <div class="tags">
             
-                <a href="http://localhost:1313/tags/git">git</a>
+                <a href="http://localhost:1313/tags/shortcodes">shortcodes</a>
+            
+                <a href="http://localhost:1313/tags/privacy">privacy</a>
             
         </div>
     

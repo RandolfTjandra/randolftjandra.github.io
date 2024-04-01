@@ -59,8 +59,6 @@ Issue: WORK-435
 Reviewer: none
 ```
 
-## Git hooks
-
 An additional thing I have set up are the follow lines in my .gitconfig.
 
 ```

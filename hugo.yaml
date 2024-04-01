@@ -33,7 +33,7 @@ markup:
 social:
   # e.g.
   github: https://www.github.com/randolftjandra
-  # twitter: your-twitter-link
+  twitter: https://twitter.com/randolftjandra
   # stackoverflow: your-stackoverflow-link
   # facebook: your-facebook-link
 
@@ -69,6 +69,8 @@ params:
 
   # Extra links in navigation
   links:
+    # - name: Categories
+    #   path: /categories
     ## e.g.
     # - name: Project
     #   path: /project
