@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/git-log/</link>
       <pubDate>Sun, 31 Mar 2024 18:31:16 -0700</pubDate>
       <guid>http://localhost:1313/posts/git-log/</guid>
-      <description>Foobar</description>
+      <description>Inspired by a former mentor of mine, I set up this alias in my .gitconfig file.&#xA;lg = log --graph --abbrev-commit --decorate --date=relative --format=format:&amp;#39;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)&amp;#39; --all When you run this you see every commit on your project&amp;rsquo;s git commit tree. You see every branch that belongs to you and every other contributor&amp;rsquo;s branches on origin in a single view. For me this is a way to observe my team&amp;rsquo;s work progress from a high level.</description>
     </item>
     <item>
       <title>Git Commit</title>

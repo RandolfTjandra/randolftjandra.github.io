@@ -1,7 +1,9 @@
 ---
 title: "Git Log"
+tags: ['git']
 date: 2024-03-31T18:31:16-07:00
 draft: false
+summary: "You'll never see git commits the same again!"
 ---
 
 Inspired by a former mentor of mine, I set up this alias in my .gitconfig file.
