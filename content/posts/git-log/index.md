@@ -15,6 +15,10 @@ lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(
 
 When you run this you see every commit on your project's git commit tree. You see every branch that belongs to you and every other contributor's branches on origin in a single view. For me this is a way to observe my team's work progress from a high level. It's a little nosy perhaps because it may not be my place to judge my peers' progress, but it's all on origin so I personally don't see the issue.
 
+![git lg example](images/lg-example.png)
+<p style="text-align:center">Example of a project commit tree. Messages redacted but you get the idea.</p>
+
+
 For example if I see someone who's building a branch that has far too many commits, I have to wonder if they're struggling to complete their work, or if the issue they're working on wasn't specified properly. Either there was too much work defined in a single issue, or its description wasn't written thoroughly enough. This is a good time to approach that contributor to see if there's anything they need to better complete their work.
 
 More importantly through this view is how I protect the health of the main git branch. I want to see a single straight vertical line. Each commit on the line should contain a single succinct line describing its contents. I do not want to see any merge commits in main. I don't even want to see any merge commits in people's branches.

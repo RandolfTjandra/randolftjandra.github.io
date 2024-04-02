@@ -70,7 +70,7 @@ if (!doNotTrack) {
           ·
         </span>
         <span>
-          534 words
+          547 words
         </span>
         <span class="split">
           ·
@@ -107,6 +107,10 @@ if (!doNotTrack) {
       <p>Inspired by a former mentor of mine, I set up this alias in my .gitconfig file.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lg = log --graph --abbrev-commit --decorate --date=relative --format=format:&#39;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)&#39; --all
 </span></span></code></pre></div><p>When you run this you see every commit on your project&rsquo;s git commit tree. You see every branch that belongs to you and every other contributor&rsquo;s branches on origin in a single view. For me this is a way to observe my team&rsquo;s work progress from a high level. It&rsquo;s a little nosy perhaps because it may not be my place to judge my peers&rsquo; progress, but it&rsquo;s all on origin so I personally don&rsquo;t see the issue.</p>
+<p><p class="markdown-image">
+  <img src="images/lg-example.png" alt="git lg example"  />
+</p></p>
+<p style="text-align:center">Example of a project commit tree. Messages redacted but you get the idea.</p>
 <p>For example if I see someone who&rsquo;s building a branch that has far too many commits, I have to wonder if they&rsquo;re struggling to complete their work, or if the issue they&rsquo;re working on wasn&rsquo;t specified properly. Either there was too much work defined in a single issue, or its description wasn&rsquo;t written thoroughly enough. This is a good time to approach that contributor to see if there&rsquo;s anything they need to better complete their work.</p>
 <p>More importantly through this view is how I protect the health of the main git branch. I want to see a single straight vertical line. Each commit on the line should contain a single succinct line describing its contents. I do not want to see any merge commits in main. I don&rsquo;t even want to see any merge commits in people&rsquo;s branches.</p>
 <p>To avoid using merge commits from main onto my development branches I always rebase origin/main. The idea is that my work should be built on top of main exactly where I intend to merge it. I want to keep my pull requests pure in the sense that they contain commits that I created for my branch.</p>
