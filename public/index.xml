@@ -6,8 +6,15 @@
     <description>Recent content on Randolf Tjandra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Apr 2024 22:27:41 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2024 23:23:29 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pull Requests</title>
+      <link>http://localhost:1313/posts/pull-requests/</link>
+      <pubDate>Thu, 04 Apr 2024 23:23:29 -0700</pubDate>
+      <guid>http://localhost:1313/posts/pull-requests/</guid>
+      <description>pull request virtue signalling</description>
+    </item>
     <item>
       <title>Stand up Meetings</title>
       <link>http://localhost:1313/posts/stand-up-meetings/</link>
