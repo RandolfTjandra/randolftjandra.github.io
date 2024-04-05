@@ -70,13 +70,13 @@ if (!doNotTrack) {
           ·
         </span>
         <span>
-          320 words
+          621 words
         </span>
         <span class="split">
           ·
         </span>
         <span>
-          2 minute read
+          3 minute read
         </span>
     </div>
 
@@ -101,12 +101,44 @@ team and I were responsible for all the subscription money that came through the
 any of our changes were generating any additional revenue or god forbid, losing the company revenue? Of course
 it&rsquo;s probably some manager&rsquo;s job to know that, they could certainly generate revenue reports from
 our payment processors, but who&rsquo;s to say that there aren&rsquo;t descrepancies between what they report and we
-should be seeing? That&rsquo;s when it becomes the developers&rsquo; responsiblity to be able to answer these questions.</p>
-<p>To take ownership of your work is two parts for me. Taking the time to understand your product and think of how to improve it,
-and to know how it is performing. These two feed into each other in a constant cycle. The better you know how the product is performing,
-the better you understand it and how to improve it, and as you improve it, the more you see its performance improve. It may obvious but if
-you&rsquo;re not personally asking yourself these questions, then you&rsquo;re just completing tasks as they&rsquo;re written out without understanding the
-context in which they were created.</p>
+should be seeing? What if there&rsquo;s a service outage? These are the times it becomes the developers&rsquo; responsiblity to be
+able to answer these questions and in fact, be proactive about monitoring these
+results.</p>
+<p>The great thing about working on live products is that it&rsquo;s pretty easy to
+monitor for irregularities. I had set up logs for our payment service for
+several key events, the most hotly observed ones were: <code>Free Trial Checkout Succeeded</code> and <code>Subscription Checkout succeeded</code>. Just from these two event logs
+I could have a log aggregator like Sumo Logic<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> parse and graph them for me so I
+could create dashboards that showed metrics that represented all the successful
+checkouts on the site through our services over the past week.</p>
+<p>When observing this data you&rsquo;ll notice that, &ldquo;ok the checkouts are cylic. People
+just aren&rsquo;t furiously paying for anime in the middle of the night&rdquo;. From there
+we can generate additional charts that show things like, how does this week&rsquo;s
+checkouts compare to the last. If this week is consistently higher, that&rsquo;s good
+news, something right is going with the product. We potentially put something
+out that we should be proud of as team. Your change, or project, can directly be
+correlated empirically with the continued success of your service; own it! If it&rsquo;s
+not, then let&rsquo;s have a conversation about it. If we can pin it to a specific
+deployment, we should go back and look at its content and see if we can resolve
+any unwanted causation. I found that there was so much power in this
+information. We can also create charts that show when checkouts deviate negatively from
+standard deviation, and most importantly we can create alerts on these. A really
+important weapon we possess to prevent further damage to the product.</p>
+<p>When I started building out these dashboards and alerts, the way I approached feature
+development started to revolve around these concepts. I would make sure that the
+tasks that I specc&rsquo;d out would contain requirements that asked the developer
+that they implement some way to monitor the outcome of their changes and call
+them out if it was missing. It may not seem like a big deal for those of you
+that already think about development like this, but to me there&rsquo;s a big
+difference in solely thinking about how to solve some engineering problem, and
+how to think like a product owner that cares about their service results</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Unfortunately I can&rsquo;t show you any of these charts as examples <a href="https://www.sumologic.com/" target="_blank" rel="noopener">Sumo Logic</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
     </div>
 
