@@ -6,14 +6,28 @@
     <description>Recent content in Posts on Randolf Tjandra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Apr 2024 22:27:41 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2024 23:36:33 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Meetings</title>
-      <link>http://localhost:1313/posts/meetings/</link>
+      <title>Ai</title>
+      <link>http://localhost:1313/posts/ai/</link>
+      <pubDate>Thu, 04 Apr 2024 23:36:33 -0700</pubDate>
+      <guid>http://localhost:1313/posts/ai/</guid>
+      <description>I actually use chatGPT so much these days. It used to feel like our job was just who could navigate stackoverflow</description>
+    </item>
+    <item>
+      <title>Pull Requests</title>
+      <link>http://localhost:1313/posts/pull-requests/</link>
+      <pubDate>Thu, 04 Apr 2024 23:23:29 -0700</pubDate>
+      <guid>http://localhost:1313/posts/pull-requests/</guid>
+      <description>pull request virtue signalling</description>
+    </item>
+    <item>
+      <title>Stand up Meetings</title>
+      <link>http://localhost:1313/posts/stand-up-meetings/</link>
       <pubDate>Thu, 04 Apr 2024 22:27:41 -0700</pubDate>
-      <guid>http://localhost:1313/posts/meetings/</guid>
-      <description>Meetings&#xA;I think we can agree that time is valuable for everyone. The more time we create, the more development work can be done. Engineering teams typically have a long laundry list of tasks that they want to see completed; work is never ending. To that end their time is critical. It&amp;rsquo;s in the entire organization&amp;rsquo;s best interest to allow them more time to do more work. When they&amp;rsquo;re in meetings, they&amp;rsquo;re not doing development work.</description>
+      <guid>http://localhost:1313/posts/stand-up-meetings/</guid>
+      <description>That feeling when you take a Zoom call at the office</description>
     </item>
     <item>
       <title>Taking Ownership</title>

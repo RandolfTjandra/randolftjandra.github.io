@@ -6,8 +6,15 @@
     <description>Recent content on Randolf Tjandra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Apr 2024 23:23:29 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2024 23:36:33 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/posts/ai/</link>
+      <pubDate>Thu, 04 Apr 2024 23:36:33 -0700</pubDate>
+      <guid>http://localhost:1313/posts/ai/</guid>
+      <description>I used to joke that my job was just being able to navigate stackoverflow really good. It was such a meme someone made a keyboard out of it. I actually own this keyboard!&#xA;Dramatization. I don&#39;t remember where I put mine&#xA;These days it&amp;rsquo;s become about being really good at wrangling with AI. I actually use chatGPT so much these days. I&amp;rsquo;ll admit, it certainly knows more about coding than I do.</description>
+    </item>
     <item>
       <title>Pull Requests</title>
       <link>http://localhost:1313/posts/pull-requests/</link>

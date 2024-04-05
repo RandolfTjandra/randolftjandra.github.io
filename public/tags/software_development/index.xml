@@ -6,8 +6,15 @@
     <description>Recent content in Software_development on Randolf Tjandra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Mar 2024 19:49:23 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2024 22:27:41 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/software_development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stand up Meetings</title>
+      <link>http://localhost:1313/posts/stand-up-meetings/</link>
+      <pubDate>Thu, 04 Apr 2024 22:27:41 -0700</pubDate>
+      <guid>http://localhost:1313/posts/stand-up-meetings/</guid>
+      <description>That feeling when you take a Zoom call at the office</description>
+    </item>
     <item>
       <title>Taking Ownership</title>
       <link>http://localhost:1313/posts/taking-ownership/</link>

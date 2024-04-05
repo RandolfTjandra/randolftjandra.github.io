@@ -6,8 +6,15 @@
     <description>Recent content in Git on Randolf Tjandra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Mar 2024 18:31:16 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2024 23:23:29 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pull Requests</title>
+      <link>http://localhost:1313/posts/pull-requests/</link>
+      <pubDate>Thu, 04 Apr 2024 23:23:29 -0700</pubDate>
+      <guid>http://localhost:1313/posts/pull-requests/</guid>
+      <description>pull request virtue signalling</description>
+    </item>
     <item>
       <title>Git Log</title>
       <link>http://localhost:1313/posts/git-log/</link>
