@@ -4,16 +4,16 @@
     <title>Fluff on Randolf Tjandra</title>
     <link>http://localhost:1313/tags/fluff/</link>
     <description>Recent content in Fluff on Randolf Tjandra</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Apr 2024 23:36:33 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/fluff/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ai</title>
+      <title>AI</title>
       <link>http://localhost:1313/posts/ai/</link>
       <pubDate>Thu, 04 Apr 2024 23:36:33 -0700</pubDate>
       <guid>http://localhost:1313/posts/ai/</guid>
-      <description>I actually use chatGPT so much these days. I used to joke that my job was just being able to navigate stackoverflow really good. It was such a meme someone made a keyboard out of it. I actually own this keyboard!&#xA;Dramatization. I don&#39;t remember where I put mine&#xA;These days</description>
+      <description>&lt;p&gt;I used to joke that my job was just being able to navigate stackoverflow really good.&#xA;It was such a meme someone made a keyboard out of it. I actually own this keyboard!&lt;/p&gt;&#xA;&lt;p&gt;&lt;p class=&#34;markdown-image&#34;&gt;&#xA;  &lt;img src=&#34;images/keyboard.jpeg&#34; alt=&#34;Meme keyboard&#34;  /&gt;&#xA;&lt;/p&gt;&lt;/p&gt;&#xA;&lt;p style=&#34;text-align:center&#34;&gt;Dramatization. I don&#39;t remember where I put mine&lt;/p&gt;&#xA;&lt;p&gt;These days it&amp;rsquo;s become about being really good at wrangling with AI. I actually use&#xA;chatGPT so much these days. I&amp;rsquo;ll admit, it certainly knows more about coding than I&#xA;do. I don&amp;rsquo;t think this a bad thing though, it&amp;rsquo;s enabled me to create things a lot&#xA;faster than I would have been able to previously.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

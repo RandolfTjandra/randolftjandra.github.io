@@ -9,7 +9,8 @@ hasCJKLanguage: true
 permalinks:
   posts: /posts/:title/
 
-paginate: 5
+pagination:
+  pagerSize: 5
 
 googleAnalytics: G-D56P867SKS
 # disqusShortname: your-disqus-shortname
@@ -29,14 +30,6 @@ markup:
     renderer:
       unsafe: true
 
-# Social links in footer, support github,twitter,stackoverflow,facebook
-social:
-  # e.g.
-  github: https://www.github.com/randolftjandra
-  twitter: https://twitter.com/randolftjandra
-  # stackoverflow: your-stackoverflow-link
-  # facebook: your-facebook-link
-
 # Site parameters
 params:
   # Site Author
@@ -45,6 +38,14 @@ params:
   bio: Software Engineer
   # Site Description, used in HTML meat
   description: My Blog
+
+  # Social links in footer, support github,twitter,stackoverflow,facebook
+  social:
+    # e.g.
+    github: https://www.github.com/randolftjandra
+    twitter: https://twitter.com/randolftjandra
+    # stackoverflow: your-stackoverflow-link
+    # facebook: your-facebook-link
 
   ###########################################
   # Optional Configuration
